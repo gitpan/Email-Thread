@@ -6,11 +6,13 @@ COPYING
 CREDITS
 INSTALL
 lib/Email/Thread.pm
+LICENCE
 LICENSE
 Makefile.PL
 MANIFEST
 MANIFEST.SKIP
-META.yml			Module meta-data in YAML
+META.yml
 README
 SIGNATURE
+t/99pod.t
 t/basic.t

@@ -1,12 +1,29 @@
 --- #YAML:1.0
+# http://module-build.sourceforge.net/META-spec.html
+distribution_type: module
+name: Email-Thread
+date: 11 Dec 2003
+author: SPOON
+version: 0.68
+license: perl
+
+conflicts: {}
+
 build_requires:
   Test::More: 0.47
-conflicts: {}
-distribution_type: module
-license: perl
-name: Email-Thread
 recommends:
+  Test::Pod: 1.02
 requires:
-  Mail::Thread: 2.1
-version: 0.66
-generated_by: docmaker version 0.89
+  Mail::Thread: 2.4
+
+private:
+  directory:
+    - t
+
+provides:
+  Email::Thread:
+    file: lib/Email/Thread.pm
+    version: 0.68
+
+dynamic_config: 0
+generated_by: docmaker version 1.01

@@ -9,7 +9,7 @@ Email::Thread - Use JWZ's mail threading algorithm with Email::Simple objects
 use Mail::Thread;
 use vars qw( @ISA $VERSION );
 @ISA = qw( Mail::Thread );
-$VERSION = '0.66';
+$VERSION = '0.68';
 
 sub _get_hdr {
     my ($class, $msg, $hdr) = @_;
@@ -24,7 +24,7 @@ use vars qw( @ISA $VERSION );
 @ISA = qw( Mail::Thread::Container );
 $VERSION = $Email::Thread::VERSION;
 
-sub subject { eval { $_[0]->message->header("Subject") } }
+sub header  { eval { $_[0]->message->header($_[1]) } }
 
 1;
 __END__
@@ -68,6 +68,8 @@ C<Mail::Thread::Container>.
 Simon Cozens (SIMON) for encouraging me to release it, and for
 Email::Simple and Mail::Thread.
 
+Richard Clamp (RCLAMP) for the header patch.
+
 =head1 SUPPORT
 
 Support for this module is provided via the CPAN RT system. This means,
@@ -80,14 +82,14 @@ address below:
 This makes it much easier for me to track things and thus means
 your problem is less likely to be neglected.
 
-=head1 LICENSE AND COPYRIGHT
+=head1 LICENCE AND COPYRIGHT
 
 Copyright E<copy> Iain Truskett, 2003. All rights reserved.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
-The full text of the licenses can be found in the F<Artistic> and
+The full text of the licences can be found in the F<Artistic> and
 F<COPYING> files included with this module.
 
 =head1 AUTHOR
