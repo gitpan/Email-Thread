@@ -1,11 +1,12 @@
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Email-Thread
-version:      0.65
-version_from: lib/Email/Thread.pm
-installdirs:  site
-requires:
-    Test::More:                    0.47
-    Mail::Thread:                  2.1
-
+--- #YAML:1.0
+build_requires:
+  Test::More: 0.47
+conflicts: {}
 distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.10_02
+license: perl
+name: Email-Thread
+recommends:
+requires:
+  Mail::Thread: 2.1
+version: 0.66
+generated_by: docmaker version 0.89

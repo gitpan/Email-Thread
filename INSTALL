@@ -38,19 +38,19 @@ Email::Thread is distributed as a gzipped tar archive file:
 
     Email-Thread-<version>.tar.gz
 
-where <version> represents the current version number, e.g. 0.65.
+where <version> represents the current version number, e.g. 0.66.
 
 To install the module, unpack the distribution archive to
 create an installation directory.  Something like this:
 
-    tar zxf Email-Thread-0.65.tar.gz
+    tar zxf Email-Thread-0.66.tar.gz
 or
-    gunzip Email-Thread-0.65.tar.gz
-    tar xf Email-Thread-0.65.tar
+    gunzip Email-Thread-0.66.tar.gz
+    tar xf Email-Thread-0.66.tar
 
 You can then 'cd' into the directory created,
 
-    cd Email-Thread-0.65
+    cd Email-Thread-0.66
 
 
 INSTALLING MANUALLY

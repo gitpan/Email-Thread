@@ -9,7 +9,7 @@ Email::Thread - Use JWZ's mail threading algorithm with Email::Simple objects
 use Mail::Thread;
 use vars qw( @ISA $VERSION );
 @ISA = qw( Mail::Thread );
-$VERSION = '0.65';
+$VERSION = '0.66';
 
 sub _get_hdr {
     my ($class, $msg, $hdr) = @_;
