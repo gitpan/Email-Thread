@@ -1,0 +1,17 @@
+Email::Thread
+
+   Use JWZ's mail threading algorithm with Email::Simple objects
+
+For installation details, see INSTALL.
+
+For usage, see the doco. Either use perldoc or view it
+on the web at:
+    <http://search.cpan.org/author/SPOON/Email-Thread/>
+
+Changes for 0.65 (11 Apr 2003)
+   - Initial release.
+
+For a complete list of changes, see the Changes file.
+
+
+by Iain Truskett.

@@ -1,0 +1,16 @@
+Artistic
+AUTHORS
+ChangeLog
+Changes
+COPYING
+CREDITS
+INSTALL
+lib/Email/Thread.pm
+LICENSE
+Makefile.PL
+MANIFEST
+MANIFEST.SKIP
+META.yml			Module meta-data in YAML
+README
+SIGNATURE
+t/basic.t
