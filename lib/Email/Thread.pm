@@ -9,7 +9,7 @@ Email::Thread - Use JWZ's mail threading algorithm with Email::Simple objects
 use Mail::Thread;
 use vars qw( @ISA $VERSION );
 @ISA = qw( Mail::Thread );
-$VERSION = '0.68';
+$VERSION = '0.70';
 
 sub _get_hdr {
     my ($class, $msg, $hdr) = @_;
@@ -32,7 +32,7 @@ __END__
 =head1 SYNOPSIS
 
     use Email::Thread;
-    my $threader = new Email::Thread (@messages);
+    my $threader = Email::Thread->new(@messages);
 
     $threader->thread;
 
@@ -42,7 +42,7 @@ __END__
         my ($self, $level) = @_;
         debug (' \\-> ' x $level);
         if ($self->message) {
-            print $self->message->head->get("Subject") , "\n";
+            print $self->message->header("Subject") , "\n";
         } else {
             print "[ Message $self not available ]\n";
         }
