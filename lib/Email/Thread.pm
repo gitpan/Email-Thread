@@ -10,7 +10,7 @@ use Mail::Thread;
 use strict;
 use vars qw( @ISA $VERSION );
 @ISA = qw( Mail::Thread );
-$VERSION = '0.71';
+$VERSION = '0.711';
 
 sub _get_hdr {
     my ($class, $msg, $hdr) = @_;
@@ -25,7 +25,7 @@ use vars qw( @ISA $VERSION );
 @ISA = qw( Mail::Thread::Container );
 $VERSION = $Email::Thread::VERSION;
 
-sub header  { eval { $_[0]->message->header($_[1]) } }
+sub header { eval { $_[0]->message->header($_[1]) } }
 
 1;
 __END__
@@ -64,24 +64,16 @@ details. Just mentally substitute C<Email::Thread> everywhere you see
 C<Mail::Thread> and C<Email::Thread::Container> where you see
 C<Mail::Thread::Container>.
 
-=head1 THANKS
+=head1 PERL EMAIL PROJECT
 
-Simon Cozens (SIMON) for encouraging me to release it, and for
-Email::Simple and Mail::Thread.
+This module is maintained by the Perl Email Project.
 
-Richard Clamp (RCLAMP) for the header patch.
+L<http://emailproject.perl.org/wiki/Email::Thread>
 
 =head1 SUPPORT
 
-Support for this module is provided via the CPAN RT system. This means,
-if you have a problem, go to the URL below, or email the email
-address below:
-
-    http://perl.dellah.org/rt/emailthread
-    bug-email-thread@rt.cpan.org
-
-This makes it much easier for me to track things and thus means
-your problem is less likely to be neglected.
+Support for this module is provided via the CPAN RT system at
+L<http://rt.cpan.org/>
 
 =head1 LICENCE AND COPYRIGHT
 
@@ -90,10 +82,14 @@ Copyright E<copy> Iain Truskett, 2003. All rights reserved.
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
-The full text of the licences can be found in the F<Artistic> and
-F<COPYING> files included with this module.
+=head1 THANKS
 
-=head1 AUTHOR
+Simon Cozens (SIMON) for encouraging me to release it, and for
+Email::Simple and Mail::Thread.
+
+Richard Clamp (RCLAMP) for the header patch.
+
+=head1 AUTHORS
 
 Iain Truskett <spoon@cpan.org>
 
