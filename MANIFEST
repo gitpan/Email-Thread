@@ -1,11 +1,14 @@
 Changes
-lib/Email/Thread.pm
 LICENSE
-Makefile.PL
 MANIFEST
+META.json
+META.yml
+Makefile.PL
 README
-t/99pod.t
+dist.ini
+lib/Email/Thread.pm
+t/00-compile.t
+t/000-report-versions-tiny.t
 t/basic.t
-t/pod.t
-t/pod-coverage.t
-META.yml                                 Module meta-data (added by MakeMaker)
+xt/release/changes_has_content.t
+xt/release/pod-syntax.t
